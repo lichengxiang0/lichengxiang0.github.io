@@ -1,0 +1,239 @@
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" 
+src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js">
+</script>
+<link href=  "/plugins/code-theme/tomorrow.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="/plugins/github-markdown.css">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+  
+    
+    
+      <link rel="stylesheet" href="/css/legend.css">
+    
+  
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body id="body-x">
+<div id="layout-content">
+  <div id="menu-outer-x">
+  <div id="menu-inner">
+    
+    
+    <div id="site-title">
+      三国丞相
+    </div>
+    
+
+     
+    <div>
+    
+      
+      <a href="/">首页</a>
+      
+    
+      
+      <a href="/archives">归档</a>
+      
+    
+    </div>
+  </div>
+</div> 
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article class="markdown-body">
+    <h2 id="post-title">数据结构
+       
+        <div id="post-time" datetime="2020-07-21T03:30:54.000Z">
+          2020-07-21
+        </div>
+      
+    </h2>
+    <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h2 id="数据结构的概述"><a href="#数据结构的概述" class="headerlink" title="数据结构的概述"></a>数据结构的概述</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>我们如何把现实生活中大量而复杂的问题，以特定的数据类型和特定的数据结构保存到主存储器（内存）中，以及在此基础上为实现某个功能（比如查找某个元素，删除某个元素，对所有元素进行排序等）而执行的相应操作，这个相应的操作也叫算法。</p>
+<p>数据结构=个体的存储+个体关系的存储    </p>
+<p>算法=对存储数据的操作</p>
+<h4 id="什么是数据结构？"><a href="#什么是数据结构？" class="headerlink" title="什么是数据结构？"></a>什么是数据结构？</h4><p>侠义：</p>
+<p>​    数据结构专门研究数据存储问题的课程</p>
+<p>​    数据的存储包含两方面：个体的存储+个体关系的存储</p>
+<p>广义：</p>
+<p>​    数据的存储既包含数据的存储，也包含数据的操作。</p>
+<p>​    对数据的操作也叫算法</p>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><h4 id="衡量算法的标准"><a href="#衡量算法的标准" class="headerlink" title="衡量算法的标准"></a>衡量算法的标准</h4><ul>
+<li><p>时间复杂度</p>
+<p>大概程序要执行的次数,而非执行的时间</p>
+</li>
+<li><p>空间复杂度</p>
+<p>算法执行过程中大概所占用的最大内存</p>
+</li>
+<li><p>难易程度</p>
+</li>
+<li><p>健壮性</p>
+</li>
+</ul>
+<h4 id="什么是算法？"><a href="#什么是算法？" class="headerlink" title="什么是算法？"></a>什么是算法？</h4><p>侠义：</p>
+<p>​    算法和数据的存储方式密切相关</p>
+<p>广义：</p>
+<p>​    算法和数据的存储方式无关</p>
+<p>​    这就是泛型思想</p>
+<h3 id="数据结构的地位"><a href="#数据结构的地位" class="headerlink" title="数据结构的地位"></a>数据结构的地位</h3><p>​    数据结构是软件中最核心的课程</p>
+<p>​    程序=数据结构+数据的操作+可被计算机执行的语言</p>
+<h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><p>​    指针的重要性：<strong>指针是C语言的灵魂</strong></p>
+<h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><p>​    地址：地址就是内存单元的编号，从0开始的非负整数，范围 0–FFFFFFFF[0–4G-1]</p>
+<p>​    指针：指针就是地址，地址就是指针；指针变量是存放内存单元地址的变量；指针的本质是一个操作受限的非负整数。</p>
+<h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><h4 id="为什么会出现结构体？"><a href="#为什么会出现结构体？" class="headerlink" title="为什么会出现结构体？"></a>为什么会出现结构体？</h4><p>​    为了表示一些复杂的数据，而普通的基本类型变量无法满足要求</p>
+<h4 id="什么叫结构体？"><a href="#什么叫结构体？" class="headerlink" title="什么叫结构体？"></a>什么叫结构体？</h4><p>​    结构体是用户根据实际需要自己定义的符合数据类型</p>
+<h4 id="如何使用结构体？"><a href="#如何使用结构体？" class="headerlink" title="如何使用结构体？"></a>如何使用结构体？</h4><p>两种方式：</p>
+<pre><code class="c">struct Student st = {1000, &quot;zhangsan&quot;, 20};
+struct Student *pst = &amp;st;</code></pre>
+<p>第一种：通过结构体变量名来实现</p>
+<pre><code class="c">st.sid</code></pre>
+<p>第二种：通过指向结构体变量的指针来实现</p>
+<pre><code class="c">pst-&gt;sid</code></pre>
+<p>pst所指向的结构体变量中的<code>sid</code> 这个成员</p>
+<pre><code>注意：结构体变量不能加减乘除，但可以星湖赋值
+普通结构体变量和结构体指针变量作为函数传参的问题</code></pre>
+  </article>
+
+  
+    
+    
+      <div id="page-prev-next">
+        
+        
+          <div></div> 
+        
+
+        
+        
+          <a id="page-next-a" href="/2020/06/22/%E8%AF%BB%E4%B9%A6%E4%BF%AE%E8%A1%8C/"> 读书分类 → </a>
+        
+      </div>
+    
+    
+    
+    
+      
+      <div id="play-button"  style="background-color: #6d5aca; border: solid 2px #6d5aca;">
+  <img id="play-img" src="/images/playback_play.png"></img>
+</div>
+<audio id="bgaudio" loop="loop" preload="none"> 
+  <source src=http://cdn.calm.com/scenes/scene-Qqkzy9k7Eo.m4a?v=1418162240715 type="audio/mpeg">
+</audio>
+
+<script>
+$(document).ready(function(){
+  //播放按钮点击
+  var audio = $("#bgaudio")[0];
+  var img = $("#play-img")[0];
+  $("#play-button").click(function(){ 
+    if (audio.paused || audio.ended) {
+      audio.play();
+      img.src = "/images/playback_pause.png";
+    } else {
+      audio.pause();
+      img.src = "/images/playback_play.png";
+    }
+  });
+});
+</script>
+    
+
+    
+    
+
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div id="reward_comment">文章对我有帮助，打赏作者</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="Copperfield WeChat Pay"/>
+          <p>微信</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="Copperfield Alipay"/>
+          <p>支付宝</p>
+        </div> 
+      
+    </div>
+  </div>
+
+
+  
+
+    </div>
+  </div>
+</div>
+
+
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTI2MS81ODI5">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
+
+<div id="bottom-outer">
+  
+  <div id="bottom-inner">
+    Copperfield 
+    ©2020 |Powered by  
+    <a href="http://hexo.io" target="_blank">Hexo</a> with theme 
+    <a href="https://github.com/iHongRen/legend" target="_blank">legend-master</a>
+  </div>
+    
+    
+    
+      <a href="/atom.xml">
+      
+      <img src=/images/rss.png height="18" width="18">
+      
+</div> 
+
+
+  
+  
+    <script src="/js/legend.js"></script>
+  
+
+
+</body>
+</html>
+
+
+<script>
+$(window).on('load', function(){
+   $('pre').addClass('prettyprint').attr('style', 'overflow:auto;');
+   prettyPrint();
+ });
+</script>
+
