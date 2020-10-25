@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="lichengxiang0.top">
-  <title>hexo_note1 | 三国丞相</title>
+  <title>将VSCode添加到鼠标右键 | 三国丞相</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是一个草稿草稿一级标题">
+  <meta name="description" content="问题Windows上安装Visual Studio Code编辑器后，常常因为忘记的时候忘记勾选等原因，没有添加到鼠标右键属性中，使用起来不太方便，于是需要手动添加  解决 新建reg文件。在桌面上新建一个文本文件，然后将后缀改为.reg文件，名字随意，例如：vscode.reg   将下面的内容复制到新建的vscode.reg文件中，内容如下：     Windows Registry Edit">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo_note1">
-<meta property="og:url" content="lichengxiang0.top/2020/05/26/hexo-note1/index.html">
+<meta property="og:title" content="将VSCode添加到鼠标右键">
+<meta property="og:url" content="lichengxiang0.top/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/index.html">
 <meta property="og:site_name" content="三国丞相">
-<meta property="og:description" content="这是一个草稿草稿一级标题">
+<meta property="og:description" content="问题Windows上安装Visual Studio Code编辑器后，常常因为忘记的时候忘记勾选等原因，没有添加到鼠标右键属性中，使用起来不太方便，于是需要手动添加  解决 新建reg文件。在桌面上新建一个文本文件，然后将后缀改为.reg文件，名字随意，例如：vscode.reg   将下面的内容复制到新建的vscode.reg文件中，内容如下：     Windows Registry Edit">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-26T15:39:54.000Z">
-<meta property="article:modified_time" content="2020-05-26T15:39:54.187Z">
+<meta property="article:published_time" content="2020-07-24T05:07:19.052Z">
+<meta property="article:modified_time" content="2020-07-24T05:19:49.244Z">
 <meta property="article:author" content="Copperfield">
 <meta name="twitter:card" content="summary">
   
@@ -154,27 +154,61 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="default-hexo-note1" class="article article-type-default " itemscope itemprop="blogPost">
+            <article id="post-将VSCode添加到鼠标右键" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo_note1
+      将VSCode添加到鼠标右键
     </h1>
   
 
         
-        <a href="/2020/05/26/hexo-note1/" class="archive-article-date">
-  	<time datetime="2020-05-26T15:39:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
+        <a href="/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/" class="archive-article-date">
+  	<time datetime="2020-07-24T05:07:19.052Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="这是一个草稿"><a href="#这是一个草稿" class="headerlink" title="这是一个草稿"></a>这是一个草稿</h1><p>草稿一级标题  </p>
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><pre><code>Windows上安装Visual Studio Code编辑器后，常常因为忘记的时候忘记勾选等原因，没有添加到鼠标右键属性中，使用起来不太方便，于是需要手动添加  </code></pre><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ol>
+<li>新建reg文件。在桌面上新建一个文本文件，然后将后缀改为<strong>.reg</strong>文件，名字随意，例如：<code>vscode.reg</code>  </li>
+<li>将下面的内容复制到新建的<code>vscode.reg</code>文件中，内容如下：  </li>
+</ol>
+<pre><code>
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode]
+@=&quot;Open with Code&quot;
+&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
+@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%1\&quot;&quot;
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+@=&quot;Open with Code&quot;
+&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%V\&quot;&quot;
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+@=&quot;Open with Code&quot;
+&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
+@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%V\&quot;&quot;  
+</code></pre><ol start="3">
+<li>将上述内容中的<code>C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe</code> 替换成自己电脑中<code>VSCode</code>的安装路劲。</li>
+<li>文件编辑好之后，双击运行，遇到提示点击”确定”即可。  </li>
+</ol>
 
       
 
@@ -254,7 +288,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:lichengxiang0.top/2020/05/26/hexo-note1/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:lichengxiang0.top/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,18 +302,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/06/22/%E8%AF%BB%E4%B9%A6%E4%BF%AE%E8%A1%8C/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          读书分类
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/05/26/hexo_github_node/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hexo搭建博客</div>
+    <a href="/2020/07/21/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据结构</div>
       <i class="icon-circle-right"></i>
     </a>
   
