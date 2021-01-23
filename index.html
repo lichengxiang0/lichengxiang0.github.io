@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="lcx.life">
-  <title>Legend</title>
+  <title>chengxiang的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Legend">
+  <meta name="description" content="开源社区学习者">
+<meta property="og:type" content="website">
+<meta property="og:title" content="chengxiang的博客">
 <meta property="og:url" content="lcx.life/index.html">
-<meta property="og:site_name" content="Legend">
+<meta property="og:site_name" content="chengxiang的博客">
+<meta property="og:description" content="开源社区学习者">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="Copper">
+<meta property="article:author" content="chengxiang">
+<meta property="article:tag" content="嵌入式软件，Linux">
+<meta property="article:tag" content="单片机">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Legend" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="chengxiang的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -46,18 +50,16 @@
 			<img src="/source/img/hanhan" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Copper</a></h1>
+		  <h1 class="header-author"><a href="/">chengxiang</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">League</p>
+		<p class="header-subtitle">悦己之作，方能悦人</p>
 		
 
 		<nav class="header-menu">
 			<ul>
 			
 				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -75,9 +77,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="/www.github.com/lichengxiang0" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="mail" target="_blank" href="/624786053@qq.com" title="mail"><i class="icon-mail"></i></a>
+					<a class="github" target="_blank" href="https://github.com/lichengxiang0" title="github"><i class="icon-github"></i></a>
 		        
 			</div>
 		</nav>
@@ -98,14 +98,12 @@
 				<img src="/source/img/hanhan" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Copper</h1>
+			  <h1 class="header-author js-header-author">chengxiang</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>League<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>悦己之作，方能悦人<i class="icon icon-quo-right"></i></p>
 			
 			
-			
-				
 			
 				
 			
@@ -114,9 +112,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="/www.github.com/lichengxiang0" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="mail" target="_blank" href="/624786053@qq.com" title="mail"><i class="icon-mail"></i></a>
+						<a class="github" target="_blank" href="https://github.com/lichengxiang0" title="github"><i class="icon-github"></i></a>
 			        
 				</div>
 			</nav>
@@ -125,9 +121,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -173,12 +167,8 @@
 <ol start="2">
 <li>在搭建环境将内容推送到Github时，修改的内容如下：</li>
 </ol>
-<pre><code class="yml"># Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: https://github.com/lichengxiang0/lichengxiang0.github.io
-  branch: master</code></pre>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/lichengxiang0/lichengxiang0.github.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
 <p>需要注意格式，repo+英文冒号+空格+地址</p>
 <p>在把repo跟换为github或者其它别名时无法推送跟新到Github</p>
 
@@ -269,34 +259,9 @@ deploy:
 <li>新建reg文件。在桌面上新建一个文本文件，然后将后缀改为<strong>.reg</strong>文件，名字随意，例如：<code>vscode.reg</code>  </li>
 <li>将下面的内容复制到新建的<code>vscode.reg</code>文件中，内容如下：  </li>
 </ol>
-<pre><code>
-Windows Registry Editor Version 5.00
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT<span class="tag">\<span class="name">*</span></span><span class="tag">\<span class="name">shell</span></span><span class="tag">\<span class="name">VSCode</span></span>]</span><br><span class="line">@="Open with Code"</span><br><span class="line">"Icon"="C:<span class="tag">\<span class="name">\</span></span>Users<span class="tag">\<span class="name">\</span></span>liche<span class="tag">\<span class="name">\</span></span>AppData<span class="tag">\<span class="name">\</span></span>Local<span class="tag">\<span class="name">\</span></span>Programs<span class="tag">\<span class="name">\</span></span>Microsoft VS Code<span class="tag">\<span class="name">\</span></span>Code.exe"</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT<span class="tag">\<span class="name">*</span></span><span class="tag">\<span class="name">shell</span></span><span class="tag">\<span class="name">VSCode</span></span><span class="tag">\<span class="name">command</span></span>]</span><br><span class="line">@="<span class="tag">\<span class="name">"</span></span>C:<span class="tag">\<span class="name">\</span></span>Users<span class="tag">\<span class="name">\</span></span>liche<span class="tag">\<span class="name">\</span></span>AppData<span class="tag">\<span class="name">\</span></span>Local<span class="tag">\<span class="name">\</span></span>Programs<span class="tag">\<span class="name">\</span></span>Microsoft VS Code<span class="tag">\<span class="name">\</span></span>Code.exe<span class="tag">\<span class="name">"</span></span> <span class="tag">\<span class="name">"</span></span><span class="comment">%1\""</span></span><br><span class="line"></span><br><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT<span class="tag">\<span class="name">Directory</span></span><span class="tag">\<span class="name">shell</span></span><span class="tag">\<span class="name">VSCode</span></span>]</span><br><span class="line">@="Open with Code"</span><br><span class="line">"Icon"="C:<span class="tag">\<span class="name">\</span></span>Users<span class="tag">\<span class="name">\</span></span>liche<span class="tag">\<span class="name">\</span></span>AppData<span class="tag">\<span class="name">\</span></span>Local<span class="tag">\<span class="name">\</span></span>Programs<span class="tag">\<span class="name">\</span></span>Microsoft VS Code<span class="tag">\<span class="name">\</span></span>Code.exe"</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT<span class="tag">\<span class="name">Directory</span></span><span class="tag">\<span class="name">shell</span></span><span class="tag">\<span class="name">VSCode</span></span><span class="tag">\<span class="name">command</span></span>]</span><br><span class="line">@="<span class="tag">\<span class="name">"</span></span>C:<span class="tag">\<span class="name">\</span></span>Users<span class="tag">\<span class="name">\</span></span>liche<span class="tag">\<span class="name">\</span></span>AppData<span class="tag">\<span class="name">\</span></span>Local<span class="tag">\<span class="name">\</span></span>Programs<span class="tag">\<span class="name">\</span></span>Microsoft VS Code<span class="tag">\<span class="name">\</span></span>Code.exe<span class="tag">\<span class="name">"</span></span> <span class="tag">\<span class="name">"</span></span><span class="comment">%V\""</span></span><br><span class="line"></span><br><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT<span class="tag">\<span class="name">Directory</span></span><span class="tag">\<span class="name">Background</span></span><span class="tag">\<span class="name">shell</span></span><span class="tag">\<span class="name">VSCode</span></span>]</span><br><span class="line">@="Open with Code"</span><br><span class="line">"Icon"="C:<span class="tag">\<span class="name">\</span></span>Users<span class="tag">\<span class="name">\</span></span>liche<span class="tag">\<span class="name">\</span></span>AppData<span class="tag">\<span class="name">\</span></span>Local<span class="tag">\<span class="name">\</span></span>Programs<span class="tag">\<span class="name">\</span></span>Microsoft VS Code<span class="tag">\<span class="name">\</span></span>Code.exe"</span><br><span class="line"></span><br><span class="line">[HKEY_CLASSES_ROOT<span class="tag">\<span class="name">Directory</span></span><span class="tag">\<span class="name">Background</span></span><span class="tag">\<span class="name">shell</span></span><span class="tag">\<span class="name">VSCode</span></span><span class="tag">\<span class="name">command</span></span>]</span><br><span class="line">@="<span class="tag">\<span class="name">"</span></span>C:<span class="tag">\<span class="name">\</span></span>Users<span class="tag">\<span class="name">\</span></span>liche<span class="tag">\<span class="name">\</span></span>AppData<span class="tag">\<span class="name">\</span></span>Local<span class="tag">\<span class="name">\</span></span>Programs<span class="tag">\<span class="name">\</span></span>Microsoft VS Code<span class="tag">\<span class="name">\</span></span>Code.exe<span class="tag">\<span class="name">"</span></span> <span class="tag">\<span class="name">"</span></span><span class="comment">%V\""</span></span><br></pre></td></tr></table></figure>
 
-[HKEY_CLASSES_ROOT\*\shell\VSCode]
-@=&quot;Open with Code&quot;
-&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
-
-[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
-@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%1\&quot;&quot;
-
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
-@=&quot;Open with Code&quot;
-&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
-
-[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
-@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%V\&quot;&quot;
-
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
-@=&quot;Open with Code&quot;
-&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
-@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%V\&quot;&quot;  
-</code></pre><ol start="3">
+<ol start="3">
 <li>将上述内容中的<code>C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe</code> 替换成自己电脑中<code>VSCode</code>的安装路劲。</li>
 <li>文件编辑好之后，双击运行，遇到提示点击”确定”即可。  </li>
 </ol>
@@ -406,15 +371,18 @@ Windows Registry Editor Version 5.00
 <h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><h4 id="为什么会出现结构体？"><a href="#为什么会出现结构体？" class="headerlink" title="为什么会出现结构体？"></a>为什么会出现结构体？</h4><p>​    为了表示一些复杂的数据，而普通的基本类型变量无法满足要求</p>
 <h4 id="什么叫结构体？"><a href="#什么叫结构体？" class="headerlink" title="什么叫结构体？"></a>什么叫结构体？</h4><p>​    结构体是用户根据实际需要自己定义的符合数据类型</p>
 <h4 id="如何使用结构体？"><a href="#如何使用结构体？" class="headerlink" title="如何使用结构体？"></a>如何使用结构体？</h4><p>两种方式：</p>
-<pre><code class="c">struct Student st = {1000, &quot;zhangsan&quot;, 20};
-struct Student *pst = &amp;st;</code></pre>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student</span> <span class="title">st</span> = &#123;</span><span class="number">1000</span>, <span class="string">"zhangsan"</span>, <span class="number">20</span>&#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student</span> *<span class="title">pst</span> = &amp;<span class="title">st</span>;</span></span><br></pre></td></tr></table></figure>
+
 <p>第一种：通过结构体变量名来实现</p>
-<pre><code class="c">st.sid</code></pre>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">st.sid</span><br></pre></td></tr></table></figure>
+
 <p>第二种：通过指向结构体变量的指针来实现</p>
-<pre><code class="c">pst-&gt;sid</code></pre>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pst-&gt;sid</span><br></pre></td></tr></table></figure>
+
 <p>pst所指向的结构体变量中的<code>sid</code> 这个成员</p>
-<pre><code>注意：结构体变量不能加减乘除，但可以相互赋值
-普通结构体变量和结构体指针变量作为函数传参的问题</code></pre><h2 id="线性结构【把所有的结点用一根直线穿起来】"><a href="#线性结构【把所有的结点用一根直线穿起来】" class="headerlink" title="线性结构【把所有的结点用一根直线穿起来】"></a>线性结构【把所有的结点用一根直线穿起来】</h2><h3 id="连续存储【数组】"><a href="#连续存储【数组】" class="headerlink" title="连续存储【数组】"></a>连续存储【数组】</h3><p>1.什么叫数组？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">注意：结构体变量不能加减乘除，但可以相互赋值</span><br><span class="line">普通结构体变量和结构体指针变量作为函数传参的问题</span><br></pre></td></tr></table></figure>
+
+<h2 id="线性结构【把所有的结点用一根直线穿起来】"><a href="#线性结构【把所有的结点用一根直线穿起来】" class="headerlink" title="线性结构【把所有的结点用一根直线穿起来】"></a>线性结构【把所有的结点用一根直线穿起来】</h2><h3 id="连续存储【数组】"><a href="#连续存储【数组】" class="headerlink" title="连续存储【数组】"></a>连续存储【数组】</h3><p>1.什么叫数组？</p>
 <p>​    元素类型相同，大小相等</p>
 <p>2.数组的优缺点 – 与链表相比</p>
 <p>优点</p>
@@ -820,7 +788,7 @@ struct Student *pst = &amp;st;</code></pre>
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 Copper
+    		&copy; 2021 chengxiang
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
