@@ -158,6 +158,107 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hexo_github_node" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/07/hexo_github_node/">Hexo搭建博客</a>
+    </h1>
+  
+
+        
+        <a href="/2020/11/07/hexo_github_node/" class="archive-article-date">
+  	<time datetime="2020-11-07T03:45:57.818Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用Hexo+Github Page搭建博客  </p>
+<p>遇到的坑：</p>
+<ol>
+<li>在使用<code>hexo d</code> 推送新的内容时，绑定的域名有时会掉线，找了好久发现是<code>hexo</code>在部署的时候自动删除<code>CNAME</code>文件,解决方式是将 <code>image</code> ,<code>favicon.io</code> <code>CNAME</code> 在本地推送时放入 <code>source</code> 目录，这样就可以避免文件被删除。具体操作是将推送到github的文件克隆到本地，然后将需要的文件找出来放入<code>source</code> 目录。  </li>
+</ol>
+<p><code>注意：CNAME文件存放的就是域名，比如我的CNAME文件内容，只有一句&quot;lichengxiang0.top&quot;</code></p>
+<ol start="2">
+<li>在搭建环境将内容推送到Github时，修改的内容如下：</li>
+</ol>
+<pre><code class="yml"># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/lichengxiang0/lichengxiang0.github.io
+  branch: master</code></pre>
+<p>需要注意格式，repo+英文冒号+空格+地址</p>
+<p>在把repo跟换为github或者其它别名时无法推送跟新到Github</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">environment</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/网页开发//" class="article-tag-list-link color5">网页开发</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/11/07/hexo_github_node/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-将VSCode添加到鼠标右键" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -165,13 +266,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/">将VSCode添加到鼠标右键</a>
+      <a class="article-title" href="/2020/11/07/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/">将VSCode添加到鼠标右键</a>
     </h1>
   
 
         
-        <a href="/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/" class="archive-article-date">
-  	<time datetime="2020-07-24T05:07:19.052Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-24</time>
+        <a href="/2020/11/07/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/" class="archive-article-date">
+  	<time datetime="2020-11-07T03:45:57.818Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-07</time>
 </a>
         
       </header>
@@ -225,7 +326,7 @@ Windows Registry Editor Version 5.00
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/11/07/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/">展开全文 >></a>
         </p>
       
 
@@ -694,107 +795,6 @@ struct Student *pst = &amp;st;</code></pre>
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/05/26/hexo-note1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo_github_node" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/26/hexo_github_node/">Hexo搭建博客</a>
-    </h1>
-  
-
-        
-        <a href="/2020/05/26/hexo_github_node/" class="archive-article-date">
-  	<time datetime="2020-05-26T14:57:16.073Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>使用Hexo+Github Page搭建博客  </p>
-<p>遇到的坑：</p>
-<ol>
-<li>在使用<code>hexo d</code> 推送新的内容时，绑定的域名有时会掉线，找了好久发现是<code>hexo</code>在部署的时候自动删除<code>CNAME</code>文件,解决方式是将 <code>image</code> ,<code>favicon.io</code> <code>CNAME</code> 在本地推送时放入 <code>source</code> 目录，这样就可以避免文件被删除。具体操作是将推送到github的文件克隆到本地，然后将需要的文件找出来放入<code>source</code> 目录。  </li>
-</ol>
-<p><code>注意：CNAME文件存放的就是域名，比如我的CNAME文件内容，只有一句&quot;lichengxiang0.top&quot;</code></p>
-<ol start="2">
-<li>在搭建环境将内容推送到Github时，修改的内容如下：</li>
-</ol>
-<pre><code class="yml"># Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: https://github.com/lichengxiang0/lichengxiang0.github.io
-  branch: master</code></pre>
-<p>需要注意格式，repo+英文冒号+空格+地址</p>
-<p>在把repo跟换为github或者其它别名时无法推送跟新到Github</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">environment</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/网页开发//" class="article-tag-list-link color5">网页开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/26/hexo_github_node/">展开全文 >></a>
         </p>
       
 

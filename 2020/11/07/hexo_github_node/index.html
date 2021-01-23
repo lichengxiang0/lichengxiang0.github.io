@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="lcx.life">
-  <title>将VSCode添加到鼠标右键 | Legend</title>
+  <title>Hexo搭建博客 | Legend</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="问题Windows上安装Visual Studio Code编辑器后，常常因为忘记的时候忘记勾选等原因，没有添加到鼠标右键属性中，使用起来不太方便，于是需要手动添加  解决 新建reg文件。在桌面上新建一个文本文件，然后将后缀改为.reg文件，名字随意，例如：vscode.reg   将下面的内容复制到新建的vscode.reg文件中，内容如下：     Windows Registry Edit">
+  <meta name="description" content="使用Hexo+Github Page搭建博客   遇到的坑：  在使用hexo d 推送新的内容时，绑定的域名有时会掉线，找了好久发现是hexo在部署的时候自动删除CNAME文件,解决方式是将 image ,favicon.io CNAME 在本地推送时放入 source 目录，这样就可以避免文件被删除。具体操作是将推送到github的文件克隆到本地，然后将需要的文件找出来放入source 目录。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="将VSCode添加到鼠标右键">
-<meta property="og:url" content="lcx.life/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/index.html">
+<meta property="og:title" content="Hexo搭建博客">
+<meta property="og:url" content="lcx.life/2020/11/07/hexo_github_node/index.html">
 <meta property="og:site_name" content="Legend">
-<meta property="og:description" content="问题Windows上安装Visual Studio Code编辑器后，常常因为忘记的时候忘记勾选等原因，没有添加到鼠标右键属性中，使用起来不太方便，于是需要手动添加  解决 新建reg文件。在桌面上新建一个文本文件，然后将后缀改为.reg文件，名字随意，例如：vscode.reg   将下面的内容复制到新建的vscode.reg文件中，内容如下：     Windows Registry Edit">
+<meta property="og:description" content="使用Hexo+Github Page搭建博客   遇到的坑：  在使用hexo d 推送新的内容时，绑定的域名有时会掉线，找了好久发现是hexo在部署的时候自动删除CNAME文件,解决方式是将 image ,favicon.io CNAME 在本地推送时放入 source 目录，这样就可以避免文件被删除。具体操作是将推送到github的文件克隆到本地，然后将需要的文件找出来放入source 目录。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-24T05:07:19.052Z">
-<meta property="article:modified_time" content="2020-07-24T05:19:49.244Z">
+<meta property="article:published_time" content="2020-11-07T03:45:57.818Z">
+<meta property="article:modified_time" content="2020-06-22T07:09:46.034Z">
 <meta property="article:author" content="Copper">
+<meta property="article:tag" content="environment">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Legend" type="application/atom+xml">
@@ -158,61 +159,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-将VSCode添加到鼠标右键" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hexo_github_node" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      将VSCode添加到鼠标右键
+      Hexo搭建博客
     </h1>
   
 
         
-        <a href="/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/" class="archive-article-date">
-  	<time datetime="2020-07-24T05:07:19.052Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-24</time>
+        <a href="/2020/11/07/hexo_github_node/" class="archive-article-date">
+  	<time datetime="2020-11-07T03:45:57.818Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><pre><code>Windows上安装Visual Studio Code编辑器后，常常因为忘记的时候忘记勾选等原因，没有添加到鼠标右键属性中，使用起来不太方便，于是需要手动添加  </code></pre><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ol>
-<li>新建reg文件。在桌面上新建一个文本文件，然后将后缀改为<strong>.reg</strong>文件，名字随意，例如：<code>vscode.reg</code>  </li>
-<li>将下面的内容复制到新建的<code>vscode.reg</code>文件中，内容如下：  </li>
+        <p>使用Hexo+Github Page搭建博客  </p>
+<p>遇到的坑：</p>
+<ol>
+<li>在使用<code>hexo d</code> 推送新的内容时，绑定的域名有时会掉线，找了好久发现是<code>hexo</code>在部署的时候自动删除<code>CNAME</code>文件,解决方式是将 <code>image</code> ,<code>favicon.io</code> <code>CNAME</code> 在本地推送时放入 <code>source</code> 目录，这样就可以避免文件被删除。具体操作是将推送到github的文件克隆到本地，然后将需要的文件找出来放入<code>source</code> 目录。  </li>
 </ol>
-<pre><code>
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\*\shell\VSCode]
-@=&quot;Open with Code&quot;
-&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
-
-[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
-@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%1\&quot;&quot;
-
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
-@=&quot;Open with Code&quot;
-&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
-
-[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
-@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%V\&quot;&quot;
-
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
-@=&quot;Open with Code&quot;
-&quot;Icon&quot;=&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;
-
-[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
-@=&quot;\&quot;C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\&quot; \&quot;%V\&quot;&quot;  
-</code></pre><ol start="3">
-<li>将上述内容中的<code>C:\\Users\\liche\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe</code> 替换成自己电脑中<code>VSCode</code>的安装路劲。</li>
-<li>文件编辑好之后，双击运行，遇到提示点击”确定”即可。  </li>
+<p><code>注意：CNAME文件存放的就是域名，比如我的CNAME文件内容，只有一句&quot;lichengxiang0.top&quot;</code></p>
+<ol start="2">
+<li>在搭建环境将内容推送到Github时，修改的内容如下：</li>
 </ol>
+<pre><code class="yml"># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/lichengxiang0/lichengxiang0.github.io
+  branch: master</code></pre>
+<p>需要注意格式，repo+英文冒号+空格+地址</p>
+<p>在把repo跟换为github或者其它别名时无法推送跟新到Github</p>
 
       
 
@@ -242,7 +225,29 @@ Windows Registry Editor Version 5.00
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">environment</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/网页开发//" class="article-tag-list-link color5">网页开发</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -292,7 +297,7 @@ Windows Registry Editor Version 5.00
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:lcx.life/2020/07/24/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:lcx.life/2020/11/07/hexo_github_node/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,8 +312,8 @@ Windows Registry Editor Version 5.00
 <nav id="article-nav">
   
   
-    <a href="/2020/07/21/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">数据结构</div>
+    <a href="/2020/11/07/%E5%B0%86VSCode%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">将VSCode添加到鼠标右键</div>
       <i class="icon-circle-right"></i>
     </a>
   
