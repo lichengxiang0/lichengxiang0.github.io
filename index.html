@@ -158,13 +158,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="2440安装交叉编译链"><a href="#2440安装交叉编译链" class="headerlink" title="2440安装交叉编译链"></a>2440安装交叉编译链</h1><h2 id="选择版本"><a href="#选择版本" class="headerlink" title="选择版本"></a>选择版本</h2><p><code>arm-linux-gcc</code>选择<code>3.4.5</code> 版本</p>
+        <h2 id="选择版本"><a href="#选择版本" class="headerlink" title="选择版本"></a>选择版本</h2><p><code>arm-linux-gcc</code>选择<code>3.4.5</code> 版本</p>
 <p><code>gcc</code>版本：5.4.0  </p>
 <p><code>Ubuntu16.04</code>64位版本</p>
 <h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><p>首先，找到<code>arm-linux-gcc-3.4.5-glibc-2.3.6.tar.bz2</code> 并解压，<code>sudo tar jxvf ``arm-linux-gcc-3.4.5-glibc-2.3.6.tar.bz2</code> ,然后添加到环境变量中，这里选择添加到<code>.bashrc</code>中，<code>sudo vim ~/.bashrc</code></p>
 <p>在末尾添加一行<code>export PATH=$PATH:/home/1_ARM9/0_pack/gcc-3.4.5-glibc-2.3.6/bin</code> ，路径根据自己实际位置添加即可。然后立即生效<code>sourcr ~/.bashrc</code> </p>
 <p>这时使用命令行查看<code>arm-linux-gcc -v</code></p>
-<p><img src="image/arm-linux-gcc.jpg" alt=""> </p>
+<p><img src="/05/2440%E5%AE%89%E8%A3%85%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E9%93%BE/arm-linux-gcc.jpg" alt> </p>
 <p>显示版本号为<code>3.4.5</code> 即安装成功</p>
 <p>如果出错，可能是64位不兼容，需要安装32位的兼容库</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install lib32ncurses5 lib32z1</span><br></pre></td></tr></table></figure>
@@ -185,7 +185,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/arm-linux-gcc//" class="article-tag-list-link color4">arm-linux-gcc</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
@@ -945,6 +967,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">嵌入式</a>
               </li>
             
             <div class="clearfix"></div>
