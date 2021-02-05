@@ -138,20 +138,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-2440安装交叉编译链" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-arm-linux-gcc" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/05/2440%E5%AE%89%E8%A3%85%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E9%93%BE/">2440安装交叉编译链</a>
+      <a class="article-title" href="/2021/02/05/arm-linux-gcc/">arm-linux-gcc</a>
     </h1>
   
 
         
-        <a href="/2021/02/05/2440%E5%AE%89%E8%A3%85%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E9%93%BE/" class="archive-article-date">
-  	<time datetime="2021-02-05T04:53:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-05</time>
+        <a href="/2021/02/05/arm-linux-gcc/" class="archive-article-date">
+  	<time datetime="2021-02-05T05:00:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-05</time>
 </a>
         
       </header>
@@ -164,10 +164,14 @@
 <h2 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h2><p>首先，找到<code>arm-linux-gcc-3.4.5-glibc-2.3.6.tar.bz2</code> 并解压，<code>sudo tar jxvf ``arm-linux-gcc-3.4.5-glibc-2.3.6.tar.bz2</code> ,然后添加到环境变量中，这里选择添加到<code>.bashrc</code>中，<code>sudo vim ~/.bashrc</code></p>
 <p>在末尾添加一行<code>export PATH=$PATH:/home/1_ARM9/0_pack/gcc-3.4.5-glibc-2.3.6/bin</code> ，路径根据自己实际位置添加即可。然后立即生效<code>sourcr ~/.bashrc</code> </p>
 <p>这时使用命令行查看<code>arm-linux-gcc -v</code></p>
-<p><img src="/05/2440%E5%AE%89%E8%A3%85%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E9%93%BE/arm-linux-gcc.jpg" alt> </p>
+<p><img src="/05/arm-linux-gcc/arm-linux-gcc.jpg" alt> </p>
 <p>显示版本号为<code>3.4.5</code> 即安装成功</p>
 <p>如果出错，可能是64位不兼容，需要安装32位的兼容库</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install lib32ncurses5 lib32z1</span><br></pre></td></tr></table></figure>
+
+
+
+
 
 
       
@@ -182,7 +186,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Embeded</a>
         		</li>
       		
 		</ul>
@@ -203,7 +207,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/05/2440%E5%AE%89%E8%A3%85%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E9%93%BE/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/02/05/arm-linux-gcc/">展开全文 >></a>
         </p>
       
 
@@ -950,11 +954,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">environment</a>
+                <a href="javascript:void(0)" class="js-tag color3">Embeded</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">book</a>
+                <a href="javascript:void(0)" class="js-tag color2">environment</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -962,7 +966,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">嵌入式</a>
+                <a href="javascript:void(0)" class="js-tag color5">book</a>
               </li>
             
             <div class="clearfix"></div>
