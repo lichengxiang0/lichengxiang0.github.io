@@ -14,7 +14,13 @@
       
         <tags>
             
-            <tag> ARM,Linux,MJPG-Streamer,FFmpeg </tag>
+            <tag> Linux </tag>
+            
+            <tag> ARM </tag>
+            
+            <tag> MJPG-Streamer </tag>
+            
+            <tag> FFmpeg </tag>
             
         </tags>
       
